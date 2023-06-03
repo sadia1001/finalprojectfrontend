@@ -13,7 +13,7 @@ const PayButton = ({ cartItems }) => {
 
   const handleCheckout = async () => {
     axios
-      .post("http://localhost:3000/api/stripe/create-checkout-session", {
+      .post("https://vast-tuna-wetsuit.cyclic.app/api/stripe/create-checkout-session", {
         cartItems,
         userId: userInfo._id,
       })

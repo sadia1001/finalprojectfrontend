@@ -41,7 +41,7 @@ export default function DashboardScreen() {
         //   return;
         // }
         const { data } = await axios.get(
-          "http://localhost:3000/api/orders/summary",
+          "https://vast-tuna-wetsuit.cyclic.app/api/orders/summary",
           {
             headers: { Authorization: `Bearer ${userInfo.token}` },
           }

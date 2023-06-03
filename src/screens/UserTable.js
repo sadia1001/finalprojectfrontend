@@ -79,7 +79,7 @@ const UserTable = () => {
   }
   useEffect(() => {
     const fetchUsers = async () => {
-        const { data } = await axios.get('http://localhost:3000/api/users');
+        const { data } = await axios.get('https://vast-tuna-wetsuit.cyclic.app/api/users');
       setUsers(data);
     };
     fetchUsers();

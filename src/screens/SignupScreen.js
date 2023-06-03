@@ -31,7 +31,7 @@ export default function SignupScreen() {
     }
     try {
       const { data } = await Axios.post(
-        "http://localhost:3000/api/users/signup",
+        "https://vast-tuna-wetsuit.cyclic.app/api/users/signup",
         {
           name,
           email,

@@ -43,7 +43,7 @@ export default function OrderHistoryScreen() {
           //   headers: { Authorization: `Bearer ${userInfo.token}` },
           // }
 
-          `http://localhost:3000/api/orders/mine/${userInfo._id}`,
+          `https://vast-tuna-wetsuit.cyclic.app/api/orders/mine/${userInfo._id}`,
           {
             headers: { Authorization: `Bearer ${userInfo.token}` },
           }

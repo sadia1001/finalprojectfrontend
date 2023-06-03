@@ -112,7 +112,7 @@ export default function SearchScreen() {
     const fetchCategories = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:3000/api/products/categories`
+          `https://vast-tuna-wetsuit.cyclic.app/api/products/categories`
         );
         setCategories(data);
       } catch (err) {

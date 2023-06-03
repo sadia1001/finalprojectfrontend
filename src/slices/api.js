@@ -1,4 +1,4 @@
-export const url = "http://localhost:3000/api";
+export const url = "https://vast-tuna-wetsuit.cyclic.app/api";
 
 export const setHeaders = () => {
 const headers = {

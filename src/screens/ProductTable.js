@@ -6,7 +6,7 @@ const ProductTable = () => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const { data } = await axios.get("http://localhost:3000/api/products");
+      const { data } = await axios.get("https://vast-tuna-wetsuit.cyclic.app/api/products");
       setUsers(data);
     };
     fetchUsers();
@@ -18,7 +18,7 @@ const ProductTable = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/products/${id}`);
+      await axios.delete(`https://vast-tuna-wetsuit.cyclic.app/api/products/${id}`);
       setUsers(users.filter((user) => user._id !== id)); // remove the deleted product from the state
     } catch (error) {
       console.log(error);

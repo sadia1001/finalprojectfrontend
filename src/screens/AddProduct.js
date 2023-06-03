@@ -27,7 +27,7 @@ function AddProduct() {
       formData.append("image", "");
 
       const res = await axios.post(
-        "http://localhost:3000/api/products/addproduct",
+        "https://vast-tuna-wetsuit.cyclic.app/api/products/addproduct",
         formData,
         {
           headers: {

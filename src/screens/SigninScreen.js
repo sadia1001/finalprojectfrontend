@@ -24,7 +24,7 @@ export default function SigninScreen() {
     e.preventDefault();
     try {
       const { data } = await Axios.post(
-        "http://localhost:3000/api/users/signin",
+        "https://vast-tuna-wetsuit.cyclic.app/api/users/signin",
         {
           email,
           password,

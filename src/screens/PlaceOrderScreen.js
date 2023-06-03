@@ -50,7 +50,7 @@ export default function PlaceOrderScreen() {
       dispatch({ type: "CREATE_REQUEST" });
 
       const { data } = await Axios.post(
-        "http://localhost:3000/api/orders",
+        "https://vast-tuna-wetsuit.cyclic.app/api/orders",
         {
           orderItems: cart.cartItems,
           shippingAddress: cart.shippingAddress,

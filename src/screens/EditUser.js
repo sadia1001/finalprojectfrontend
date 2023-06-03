@@ -27,7 +27,7 @@ const EditUserData = () => {
 const editData = async(e)=>{
     e.preventDefault();
     try{
-   let res =await axios.put(`http://localhost:3000/api/users/edit/${location.state._id}`,{
+   let res =await axios.put(`https://vast-tuna-wetsuit.cyclic.app/api/users/edit/${location.state._id}`,{
     name:name,
     email:email,
     type:type

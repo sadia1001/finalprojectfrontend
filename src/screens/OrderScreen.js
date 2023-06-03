@@ -88,7 +88,7 @@ export default function OrderScreen() {
         try {
           dispatch({ type: "FETCH_REQUEST" });
           const { data } = await axios.get(
-            `http://localhost:3000/api/orders/${orderId}`,
+            `https://vast-tuna-wetsuit.cyclic.app/api/orders/${orderId}`,
             {
               headers: { authorization: `Bearer ${userInfo.token}` },
             }
